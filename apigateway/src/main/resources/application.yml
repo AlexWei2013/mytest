@@ -1,0 +1,19 @@
+zuul:    
+  routes:
+    get:
+      path: /get/**
+      url: http://localhost:8090/available
+    links:
+      path: /foos/**
+      url: http://localhost:8090/foos
+    images:
+      path: /image/**
+      url: http://httpbin.org/image
+    app:
+      path: /check/**
+      serviceId: myteam
+ 
+
+eureka:
+  client:
+    enabled: false

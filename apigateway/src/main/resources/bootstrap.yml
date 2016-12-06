@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: zuulserver
+server:
+  port: 8080
